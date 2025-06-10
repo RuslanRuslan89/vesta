@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vesta Serggeva Beauty</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Веста Сергеева — Мастер окрашивания и капсулирования</h1>
+      <p>Создание идеальных оттенков и безупречного ухода за волосами.</p>
+      <button onclick="location.href='booking.html'">Забронировать онлайн</button>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="block">
+      <h2>Окрашивание</h2>
+      <img src="assets/images/hair-color.jpg" alt="Окрашивание" />
+      <p>Индивидуальный подход к каждому клиенту. Только качественные красители.</p>
+    </div>
+    <div class="block">
+      <h2>Капсулирование</h2>
+      <img src="assets/images/capsules.jpg" alt="Капсулирование" />
+      <p>Решение для поврежденных волос. Восстановление структуры и блеска.</p>
+    </div>
+    <div class="block">
+      <h2>Уход</h2>
+      <img src="assets/images/treatment.jpg" alt="Уход" />
+      <p>Профессиональные маски, бальзамы и процедуры для здоровых волос.</p>
+    </div>
+  </section>
+
+  <section class="chart-section">
+    <canvas id="colorPopularityChart"></canvas>
+    <input type="range" id="toneSlider" min="1" max="10" value="5">
+    <p>Выберите интенсивность оттенка:</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vesta Serggeva Beauty</p>
+  </footer>
+</body>
+</html>
