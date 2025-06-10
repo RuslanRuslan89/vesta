@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .block {
+    padding: 15px;
+  }
+}
