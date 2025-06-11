@@ -1,47 +1,172 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vesta Serggeva Beauty</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script defer src="assets/js/main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vesta Serggeva Beauty - Профессиональное окрашивание волос</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Веста Сергеева — Мастер окрашивания и капсулирования</h1>
-      <p>Создание идеальных оттенков и безупречного ухода за волосами.</p>
-      <button onclick="location.href='booking.html'">Забронировать онлайн</button>
-    </div>
-  </header>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Vesta Serggeva Beauty</h1>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Главная</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="testimonials.html">Отзывы</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <section class="features">
-    <div class="block">
-      <h2>Окрашивание</h2>
-      <img src="assets/images/hair-color.jpg" alt="Окрашивание" />
-      <p>Индивидуальный подход к каждому клиенту. Только качественные красители.</p>
-    </div>
-    <div class="block">
-      <h2>Капсулирование</h2>
-      <img src="assets/images/capsules.jpg" alt="Капсулирование" />
-      <p>Решение для поврежденных волос. Восстановление структуры и блеска.</p>
-    </div>
-    <div class="block">
-      <h2>Уход</h2>
-      <img src="assets/images/treatment.jpg" alt="Уход" />
-      <p>Профессиональные маски, бальзамы и процедуры для здоровых волос.</p>
-    </div>
-  </section>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Профессиональное окрашивание и капсуляция волос</h2>
+            <p>Премиальное качество и индивидуальный подход</p>
+            <a href="services.html" class="btn btn-primary">Наши услуги</a>
+            <a href="contact.html" class="btn btn-secondary">Записаться</a>
+        </div>
+    </section>
 
-  <section class="chart-section">
-    <canvas id="colorPopularityChart"></canvas>
-    <input type="range" id="toneSlider" min="1" max="10" value="5">
-    <p>Выберите интенсивность оттенка:</p>
-  </section>
+    <section class="services-highlight">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Окрашивание волос</h3>
+                    <p>Профессиональные техники окрашивания для идеального результата</p>
+                    <a href="services.html#coloring" class="btn btn-small">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Капсуляция волос</h3>
+                    <p>Инновационная технология для долговременного ухода за волосами</p>
+                    <a href="services.html#encapsulation" class="btn btn-small">Подробнее</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Комплексный уход</h3>
+                    <p>Полный спектр услуг для здоровья и красоты ваших волос</p>
+                    <a href="services.html#care" class="btn btn-small">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Vesta Serggeva Beauty</p>
-  </footer>
+    <section class="before-after">
+        <div class="container">
+            <h2 class="section-title">Наши работы</h2>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <div class="before">
+                            <img src="images/before1.jpg" alt="До">
+                            <span>До</span>
+                        </div>
+                        <div class="after">
+                            <img src="images/after1.jpg" alt="После">
+                            <span>После</span>
+                        </div>
+                    </div>
+                    <!-- Добавьте дополнительные слайды -->
+                </div>
+                <div class="slider-controls">
+                    <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+            <a href="gallery.html" class="btn btn-primary">Смотреть все работы</a>
+        </div>
+    </section>
+
+    <section class="testimonials-preview">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Лучший мастер по окрашиванию! Цвет держится невероятно долго."</p>
+                    <div class="client-info">
+                        <img src="images/client1.jpg" alt="Анна">
+                        <span>Анна, 28 лет</span>
+                    </div>
+                </div>
+                <!-- Добавьте дополнительные отзывы -->
+            </div>
+            <a href="testimonials.html" class="btn btn-secondary">Все отзывы</a>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Готовы к преображению?</h2>
+            <p>Запишитесь на консультацию прямо сейчас</p>
+            <a href="contact.html" class="btn btn-primary">Записаться онлайн</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vesta Serggeva Beauty</h3>
+                    <p>Профессиональное окрашивание и капсуляция волос</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Примерная, 123</p>
+                    <p><i class="fas fa-phone"></i> +7 (123) 456-78-90</p>
+                    <p><i class="fas fa-envelope"></i> info@vestaserggeva.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Часы работы</h3>
+                    <p>Пн-Пт: 10:00 - 20:00</p>
+                    <p>Сб-Вс: 11:00 - 18:00</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Соцсети</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Vesta Serggeva Beauty. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
