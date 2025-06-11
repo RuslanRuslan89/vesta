@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vesta Serggeva Beauty - Профессиональное окрашивание волос</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">      
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header aos-init aos-animate" data-aos="fade-down">
         <div class="container">
             <div class="logo">
                 <h1>Vesta Serggeva Beauty</h1>
@@ -34,7 +34,7 @@
     </header>
 
     <!-- Hero -->
-    <section class="hero">
+    <section class="hero aos-init aos-animate" data-aos="fade-up">
         <div class="hero-content">
             <h2>Профессиональное окрашивание и капсуляция волос</h2>
             <p>Премиальное качество и индивидуальный подход</p>
@@ -44,20 +44,20 @@
     </section>
 
     <!-- Services Highlight -->
-    <section class="services-highlight">
+    <section class="services-highlight aos-init aos-animate" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Наши услуги</h2>
+            <h2 class="section-title aos-init aos-animate" data-aos="zoom-in">Наши услуги</h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card aos-init aos-animate" data-aos="fade-right">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
                     <h3>Окрашивание волос</h3>
                     <p>Профессиональные техники окрашивания для идеального результата</p>
-                    <a href="services.html#coloring" class="btn btn-small">Подробнее</a>   
+                    <a href="services.html#coloring" class="btn btn-small">Подробнее</a>      
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card aos-init aos-animate" data-aos="fade-up">
                     <div class="service-icon">
                         <i class="fas fa-spa"></i>
                     </div>
@@ -66,7 +66,7 @@
                     <a href="services.html#encapsulation" class="btn btn-small">Подробнее</a>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card aos-init aos-animate" data-aos="fade-left">
                     <div class="service-icon">
                         <i class="fas fa-cut"></i>
                     </div>
@@ -79,9 +79,9 @@
     </section>
 
     <!-- Before & After -->
-    <section class="before-after">
+    <section class="before-after aos-init aos-animate" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Наши работы</h2>
+            <h2 class="section-title aos-init aos-animate" data-aos="zoom-in">Наши работы</h2>
             <div class="slider-container">
                 <div class="slider">
                     <div class="slide">
@@ -115,11 +115,11 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials-preview">
+    <section class="testimonials-preview aos-init aos-animate" data-aos="fade-up">
         <div class="container">
-            <h2 class="section-title">Отзывы клиентов</h2>
+            <h2 class="section-title aos-init aos-animate" data-aos="zoom-in">Отзывы клиентов</h2>
             <div class="testimonials-grid">
-                <div class="testimonial-card">
+                <div class="testimonial-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -133,7 +133,7 @@
                         <span>Анна, 28 лет</span>
                     </div>
                 </div>
-                <div class="testimonial-card">
+                <div class="testimonial-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -153,7 +153,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section aos-init aos-animate" data-aos="fade-up">
         <div class="container">
             <h2>Готовы к преображению?</h2>
             <p>Запишитесь на консультацию прямо сейчас</p>
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer aos-init aos-animate" data-aos="fade-up">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -199,5 +199,13 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script> 
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html>
